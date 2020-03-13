@@ -19,9 +19,9 @@ import static com.company.project.core.ProjectConstant.*;
  */
 public class CodeGenerator {
     //JDBC配置，请修改为你项目的实际配置
-    private static final String JDBC_URL = "jdbc:mysql://192.168.100.127:3306/scrmdata";
+    private static final String JDBC_URL = "jdbc:mysql://127.1.1.0:3306/data";
     private static final String JDBC_USERNAME = "java";
-    private static final String JDBC_PASSWORD = "=+8%9.-5us2L";
+    private static final String JDBC_PASSWORD = "123456";
     private static final String JDBC_DIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
 
     private static final String PROJECT_PATH = System.getProperty("user.dir");//项目在硬盘上的基础路径
