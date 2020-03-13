@@ -22,7 +22,7 @@ public class ${modelNameUpperCamel}Controller {
     private ${modelNameUpperCamel}Service ${modelNameLowerCamel}Service;
 
     @ApiOperation(value = "新增")
-    @ApiImplicitParams({@ApiImplicitParam(name = "${modelNameLowerCamel}", value = "", required = true, dataType = "${modelNameUpperCamel}")})
+    @ApiImplicitParams({@ApiImplicitParam(name = "${modelNameLowerCamel}", value = "", required = true, dataType = "String")})
     @PostMapping(value = "/add", produces = "application/json", consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE})
     public Result add(@RequestParam(value = "${modelNameLowerCamel}") ${modelNameUpperCamel} ${modelNameLowerCamel}) {
         ${modelNameLowerCamel}Service.save(${modelNameLowerCamel});
@@ -38,7 +38,7 @@ public class ${modelNameUpperCamel}Controller {
     }
 
     @ApiOperation(value = "修改")
-    @ApiImplicitParams({@ApiImplicitParam(name = "${modelNameLowerCamel}", value = "", required = true, dataType = "${modelNameUpperCamel}")})
+    @ApiImplicitParams({@ApiImplicitParam(name = "${modelNameLowerCamel}", value = "", required = true, dataType = "String")})
     @PutMapping(value = "/update", produces = "application/json", consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE})
     public Result update(@RequestParam(value = "${modelNameLowerCamel}") ${modelNameUpperCamel} ${modelNameLowerCamel}) {
         ${modelNameLowerCamel}Service.update(${modelNameLowerCamel});
